@@ -1,4 +1,6 @@
 import './BottomNavBar.css';
+import websiteLogo from '../src/logo2.png'
+
 
 const BottomNavBar = ()  => {
 
@@ -7,7 +9,7 @@ const BottomNavBar = ()  => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-left-1'>
-                        <img onClick={() => window.location.href='/App.js'} className='webLogo' src='/logo2.png'></img>
+                        <img onClick={() => window.location.href='/App.js'} className='webLogo' src={websiteLogo}></img>
                         <p style={{marginTop:"0px"}}>Displaying Better Wisdom</p>
                         <p><small>© 2023</small></p>
                     </div>
