@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/UScollege-calculator/static/css/main.07ded45b.css",
+    "main.js": "/UScollege-calculator/static/js/main.813a6637.js",
+    "static/js/787.3ee92279.chunk.js": "/UScollege-calculator/static/js/787.3ee92279.chunk.js",
+    "static/media/Cost.txt": "/UScollege-calculator/static/media/Cost.9ea7fa3ee99d6fd0f4a1.txt",
+    "index.html": "/UScollege-calculator/index.html",
+    "main.07ded45b.css.map": "/UScollege-calculator/static/css/main.07ded45b.css.map",
+    "main.813a6637.js.map": "/UScollege-calculator/static/js/main.813a6637.js.map",
+    "787.3ee92279.chunk.js.map": "/UScollege-calculator/static/js/787.3ee92279.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07ded45b.css",
+    "static/js/main.813a6637.js"
+  ]
+}
