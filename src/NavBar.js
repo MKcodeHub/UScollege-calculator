@@ -1,4 +1,5 @@
 import './Navbar.css';
+import websiteLogo from '../src/logo1.png'
 
 export default function Navbar () {
 
@@ -9,7 +10,7 @@ export default function Navbar () {
     return (
     <nav className='nav'>
       
-      <img onClick={() => window.location.href='/App.js'} className='webLogo' src='/logo1.png'></img>
+      <img onClick={() => window.location.href='/App.js'} className='webLogo' src={websiteLogo}></img>
       <a href="./App.js" className='site-title'>Wisdom.ST</a>
         <ul>
           {/* Slide Menu
