@@ -1,0 +1,44 @@
+
+.bottomNav {
+  padding: 0 12rem;
+  font-family: 'Trebuchet MS', sans-serif;
+    
+  margin-top: 50px;
+  background-color: #d0d2d3;
+  color: rgb(0, 0, 0);
+  
+  justify-content: space-between;
+  padding-top: 35px;
+  overflow: auto;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+.row {
+    display:flex;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin-left: -40px;
+  list-style: none;
+}
+.col-left-1 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 50%;
+}
+.col-right {
+
+    font-size: 12px;
+    position: relative;
+
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 16.66666667%;
+}

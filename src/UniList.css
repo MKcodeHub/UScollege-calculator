@@ -1,0 +1,399 @@
+
+
+.top7University{
+  
+    display: flex;
+    flex-direction: row;
+    gap:2px;
+    
+  }
+  .top7University :hover {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+  }
+
+  .university-label {
+    /*
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    --> for hidding letters if letters is overflowed because of the zoom in
+    */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex:1px;
+    border : 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .checkbox {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+  }
+  .checkbox:checked {
+    background-color: #20A720;
+  }
+  .university-name{
+    margin-right: 5px;
+    border-radius: 100%;
+    font-family: Nunito,sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .university-logo {
+    margin-bottom: -4.3px;
+    margin: auto;
+    height : 50px;
+    border-radius: 100%;
+  }
+  .top7UniversitySelection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.costList {
+    flex: 1 1 30%;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.temp-costList {
+    font-size: 1rem;
+}
+
+
+
+  .universitySelection {
+    margin-bottom: 30px;
+  }
+  .searchbox-title {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchbox-title h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  .search-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .search-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-inner input{
+    width: 340px;
+    padding: 8px;
+    border: solid 1px black;
+    border-radius: 8px;
+    
+    margin-bottom: 0px;
+    font-size: 16px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  }
+  .search-inner p {
+    margin-top: 0px;
+    color:red;
+  }
+
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px;
+    border-radius: 12px;
+    border: solid 1px #343a40;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-height: 200px;
+    overflow-y: autp;
+    overflow-x: hidden;
+    width: 360px; 
+    margin-top: 5px;
+  }
+  .dropdown:empty {
+    border: none;
+    box-shadow: none;
+  }
+  .dropdown-row {
+    padding: 8px;
+    color: #343a40;
+    cursor: pointer;
+    height: 20px;
+}
+.dropdown-row:hover {
+  background-color: #e9ecef;
+}
+  .universitySelection2 {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  }
+  .universitySelection2 h1 {
+    color: #343a40; /* Dark grey color */
+    margin-bottom: 20px;
+  }
+  .searchbox-title2 {
+    display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between items */
+  }
+  .searchbox-title2 span {
+    color: #495057; /* Medium-dark grey color */
+    font-size: 16px;
+  }
+  .selection-logo {
+    width: 70px;
+  }
+  .universitySel-reset {
+    display: inline-block;
+    background-color: #ff6347;
+    color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  }
+  .universitySel-reset:hover {
+    background-color: #e52b1a;
+  }
+
+
+
+  .countrySelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.flags button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f9fa; /* Light grey color */
+    color: #343a40; /* Dark grey color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.flags button:hover {
+    background-color: #e9ecef; /* A lighter shade of grey for hover effect */
+}
+.flags button img {
+  width: 20px;
+    margin-bottom: -3.5px;
+    margin-right: 2px;
+}
+
+.calculating-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.initialing-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background: #5d6f78;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /*speed of transform*/
+}
+.initialing-button:hover {
+  background: #45a049;
+}
+.initialing-button:active {
+  background: #2e7d32;
+  transform: scale(0.7); /* Slightly reduce the size of the button */
+}
+
+  .university-detailcontainer {
+    border : 2px solid black;
+    background-color: rgb(236, 245, 253);
+    overflow: auto;
+  }
+  .header-listBox {
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .header-logo-container {
+    width:15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .university-header-logo {
+    margin:10px;
+    width: 70%;
+  }
+  .header-name-container {
+    width: 100%;
+    border-left: 1px solid black;
+    height: 120px;
+  }
+  .university-header-name {
+    margin-top: 10px;
+    margin-left:10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-size: 30px;
+  }
+  .header-name-details {
+    margin-top:0px;
+    font-style: italic;
+    font-size: 20px;
+  }
+  .listBox-receipt-with-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*----------------------------List Box*/
+  .listBox {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+  }
+  #receipt{
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+    padding:2mm;
+    margin: 0 auto;
+    width: 100mm;
+    background: #FFF;
+  }
+  p{
+    font-size: .7em;
+    color: #666;
+    line-height: 1.2em;
+  }
+  #mid{min-height: 60px;} 
+  #bot{min-height: 50px;}
+  
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .cost-header {
+    color: #A9B0BB;
+    font-size: .75em;
+    border-bottom: 2px solid #EBECEE;
+  }
+  .tabletitle{
+    font-size: .75em;
+    background: #EEE;
+  }
+  .list{width:44mm;
+  padding-left:10px;
+  }
+  .cost {
+    width: 0mm;
+    padding-right:10px;
+  }
+  .itemtext{
+    font-size: .9em;
+    padding-left:5px;
+  }
+  .listcheckbox {
+    width: 13px; 
+    height: 13px; 
+  }
+
+
+  .totalcostbox {
+    margin-top: 30px;
+    text-align: right;
+    border-top: 2px solid #EBECEE;
+  }
+  .field {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  .field span{
+    display: inline-block;
+    margin-left: 20px;
+    min-width: 85px;
+    color: #84868A;
+    font-size: 15px;
+  }
+  .field-grand-total{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+  }
+  .field-grand-total span{
+    color: #20A720;
+    font-size: 16px;
+    margin-left: 4px;
+  }
+  .field-grand-total img {
+    width: 20px;
+    margin-bottom: -3.5px;
+    margin-right: 2px;
+  }
+  /*----------------------------map and overview box*/
+  .overview-rank-box {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+  }
+  .overview-container {
+    margin-right: 20px;
+}
+
+.overview-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.overview-container p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+  .map-container {
+    width: 60%;
+    height: 100%;
+  }
+  .map-container iframe {
+
+    width: 100%;
+    height: 100%;
+  }
+
+  
