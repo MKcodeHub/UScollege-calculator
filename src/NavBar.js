@@ -2,8 +2,6 @@ import './Navbar.css';
 import websiteLogo from '../src/logo1.png'
 
 export default function Navbar () {
-
-
     const hmmmm = () => {
       console.log('screenshot!')
     }
